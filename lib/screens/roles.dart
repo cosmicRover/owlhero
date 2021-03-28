@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:owlhero/app_constants/app_colors.dart';
 import 'package:owlhero/components/card_component.dart';
 import 'package:owlhero/components/text_component.dart';
+import 'package:owlhero/screens/hero-form.dart';
 
 class Roles extends StatelessWidget {
   final _colors = AppColors();
@@ -9,29 +10,32 @@ class Roles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: _colors.appDarkTeal,
+        backgroundColor: _colors.appDarkTeal,
         body: ListView(
-      children: [
-        TextComponent("Choose your role", 36, _colors.appBeige, true),
+          children: [
+            TextComponent("Choose your role", 36, _colors.appBeige, true),
 //        SizedBox(
 //          height: 26,
 //        ),
-        GestureDetector(
-          onTap: () => print("Component tapped"),
-          child: CardComponent("Owl (teacher)"),
-        ),
+            GestureDetector(
+              onTap: () {},
+              child: CardComponent("Owl (teacher)", "assets/owl.png"),
+            ),
 //        SizedBox(
 //          height: 36,
 //        ),
-        GestureDetector(
-          onTap: () => print("Component tapped"),
-          child: Column(
-            children: [
-              CardComponent("Hero (helper)"),
-            ],
-          ),
-        )
-      ],
-    ));
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HeroForm()));
+              },
+              child: Column(
+                children: [
+                  CardComponent("Hero (helper)", "assets/hero.png"),
+                ],
+              ),
+            )
+          ],
+        ));
   }
 }

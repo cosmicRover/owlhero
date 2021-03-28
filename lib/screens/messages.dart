@@ -33,7 +33,7 @@ class Messages extends StatelessWidget {
                 "Jane Doe",
                 "10:03 am",
                 "${this.message}",
-                "https://www.vhv.rs/dpng/d/12-127480_super-hero-clip-art-png-transparent-png.png",
+                "assets/owl.png",
               ),
             ],
           ),

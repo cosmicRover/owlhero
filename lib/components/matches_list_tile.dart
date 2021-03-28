@@ -3,7 +3,10 @@ import 'package:owlhero/app_constants/app_colors.dart';
 import 'package:owlhero/components/left_text_component.dart';
 
 class MatchesListTile extends StatelessWidget {
-  final _colors = AppColors();
+  final AppColors _colors;
+  final String _name;
+
+  MatchesListTile(this._name, this._colors);
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +14,8 @@ class MatchesListTile extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 50,
-          backgroundImage: NetworkImage(
-            "https://i.pinimg.com/736x/db/da/93/dbda933c564613b17c8cf85a21f60e7b.jpg",
+          backgroundImage: AssetImage(
+            "assets/owl.png",
           ),
         ),
         Padding(
@@ -22,7 +25,7 @@ class MatchesListTile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  children: [LeftTextComponent("John Doe", 26, Colors.white)],
+                  children: [LeftTextComponent("$_name", 26, Colors.white)],
                 ),
                 Row(
                   children: [

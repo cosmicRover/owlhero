@@ -21,7 +21,7 @@ class ChatBubble extends StatelessWidget {
             child: Container(
               height: 55,
               width: 55,
-              child: Image.network(this.picUrl),
+              child: Image.asset(picUrl),
             ),
           ),
           SizedBox(
@@ -37,9 +37,9 @@ class ChatBubble extends StatelessWidget {
                     Text(
                       name,
                       style: GoogleFonts.montserrat(
-                          color: Colors.white,
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                     SizedBox(

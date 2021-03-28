@@ -12,8 +12,8 @@ class MessagesListTile extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 50,
-          backgroundImage: NetworkImage(
-            "https://www.vhv.rs/dpng/d/12-127480_super-hero-clip-art-png-transparent-png.png",
+          backgroundImage: AssetImage(
+            "assets/hero.png",
           ),
         ),
         Padding(
@@ -25,7 +25,7 @@ class MessagesListTile extends StatelessWidget {
                 Row(
                   children: [LeftTextComponent("Jane Doe", 26, Colors.white)],
                 ),
-                Text("Hello there, I'd love help out at your school!", style: TextStyle(
+                Text("Hello there, thank you so much for matching!", style: TextStyle(
                   color: Colors.white
                 ),)
               ],

@@ -3,6 +3,7 @@ import 'package:owlhero/app_constants/app_colors.dart';
 import 'package:owlhero/components/form_text_component.dart';
 import 'package:owlhero/components/left_text_component.dart';
 import 'package:owlhero/components/text_component.dart';
+import 'package:owlhero/screens/hero-swipe-view.dart';
 
 class HeroForm extends StatefulWidget {
   @override
@@ -194,7 +195,8 @@ class _HeroFormState extends State<HeroForm> {
     if (_currentStep < 5) {
       setState(() => _currentStep += 1);
     } else {
-      print("Navigate to next page");
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => HeroSwipeView()));
     }
   }
 
