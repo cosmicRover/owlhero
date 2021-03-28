@@ -1,16 +1,29 @@
-# owlhero
+# OwlHero :school_satchel: :notebook: :owl: :superhero_woman: :superhero:
 
-A new Flutter project.
+A cross platform mobile application that allows teachers (Owls) connect with willing volunteers (Heroes).
 
-## Getting Started
+# USER STORIES
 
-This project is a starting point for a Flutter application.
+##### :heavy_check_mark: Users can select a role (Owl or Hero) :sparkles:
 
-A few resources to get you started if this is your first Flutter project:
+##### :heavy_check_mark: Owls/Heroes can fill out their background information :sparkles:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+##### :heavy_check_mark: Heroes can swipe right or left on Owls that they would like to work with :sparkles:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##### :heavy_check_mark: Matched Owls and Heroes can start a conversation and start working together :sparkles:
+ 
+powered by: MongoDB (https://www.mongodb.com/) :desktop_computer: 
+ 
+##### :heavy_check_mark: :heavy_check_mark: Owls/Heroes can access this app on iOS and Android
+
+App powered by: Flutter (https://flutter.dev) :zap:
+ 
+# Landing Page
+<img src="https://media.giphy.com/media/rkBmcuBE9kfXVDLFk9/giphy.gif"/>
+
+# UI
+<img src="https://media.giphy.com/media/xDrNrWnXS4juPAEifi/giphy.gif"/>
+
+# PITCH/DEMO
+
+![OwlHero]()
