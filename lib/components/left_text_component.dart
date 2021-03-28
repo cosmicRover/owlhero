@@ -14,7 +14,7 @@ class LeftTextComponent extends StatelessWidget {
       alignment: Alignment.centerLeft,
       child: SelectableText("$_text",
           toolbarOptions: ToolbarOptions(copy: true),
-          style: GoogleFonts.oswald(
+          style: GoogleFonts.workSans(
               textStyle: Theme.of(context).textTheme.headline4,
               fontSize: _size,
               color: _color)),

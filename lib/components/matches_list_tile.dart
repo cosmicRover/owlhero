@@ -31,10 +31,7 @@ class MatchesListTile extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text(
-                        "Accept",
-                        style: TextStyle(color: Colors.white),
-                      ),
+                      child: LeftTextComponent("Accept", 14, Colors.white),
                       style: ElevatedButton.styleFrom(
                         primary: _colors.appBlue, // background
                         onPrimary: Colors.white, // foreground
@@ -49,10 +46,7 @@ class MatchesListTile extends StatelessWidget {
                           primary: _colors.appLightBlue, // background
                           onPrimary: Colors.white, // foreground
                         ),
-                        child: Text(
-                          "Decline",
-                          style: TextStyle(color: Colors.white),
-                        )),
+                        child: LeftTextComponent("Decline", 14, Colors.white)),
                   ],
                 )
               ],

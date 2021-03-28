@@ -14,25 +14,25 @@ class HeroSwipeView extends StatefulWidget {
 class _HeroSwipeViewState extends State<HeroSwipeView>
     with TickerProviderStateMixin {
   List<String> owlImages = [
-    'https://www.teachervision.com/sites/default/files/2019-01/classroomexpectations.jpg',
-    'https://www.cfchildren.org/wp-content/uploads/blog/september-2017/middle-school-teacher.jpg',
-    'https://journalistsresource.org/wp-content/uploads/2017/05/Teacher-with-student.jpg',
-    'https://img.huffingtonpost.com/asset/57dc0d241800006c32bd1e24.jpeg?ops=1910_1000'
+    'assets/owl1.png',
+    'assets/owl2.png',
+    'assets/owl3.png',
+    'assets/owl4.png'
   ];
 
-  List<String> owlBio = [
-    'I’m a chemistry teacher in high school! I’d love a helping hand with grading homework and tutoring students. ',
-    'I’m a 4th grade teacher and I would appreciate having someone develop the curriculum alongside me. ',
-    'I’m an 8th grade teacher and need an extra hand in helping my students prepare for middle school exams!',
-    'I’m a 1st grade teacher and would like someone to help me organize fun and educational trips.',
-  ];
-
-  List<String> owls = [
-    'John Harimon',
-    'Hannah Kim',
-    'Joel Torge',
-    'Kristy Lau'
-  ];
+//  List<String> owlBio = [
+//    'I’m a chemistry teacher in high school! I’d love a helping hand with grading homework and tutoring students. ',
+//    'I’m a 4th grade teacher and I would appreciate having someone develop the curriculum alongside me. ',
+//    'I’m an 8th grade teacher and need an extra hand in helping my students prepare for middle school exams!',
+//    'I’m a 1st grade teacher and would like someone to help me organize fun and educational trips.',
+//  ];
+//
+//  List<String> owls = [
+//    'John Harimon',
+//    'Hannah Kim',
+//    'Joel Torge',
+//    'Kristy Lau'
+//  ];
 //  Future<List<String>> data;
 //
 //  @override
@@ -87,7 +87,7 @@ class _HeroSwipeViewState extends State<HeroSwipeView>
                 minHeight: MediaQuery.of(context).size.width * 0.8,
                 cardBuilder: (context, index) => Card(
                   child: ImageContainer('${owlImages[index]}',
-                      '${owlBio[index]}', '${owls[index]}'),
+                      '', ''),
                 ),
                 cardController: controller = CardController(),
                 swipeUpdateCallback:

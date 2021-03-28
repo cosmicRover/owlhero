@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:owlhero/app_constants/app_colors.dart';
+import 'package:owlhero/components/form_text_component.dart';
 import 'package:owlhero/components/left_text_component.dart';
 import 'package:owlhero/components/matches_list_tile.dart';
 import 'package:owlhero/components/messages_list_tile.dart';
@@ -34,7 +35,8 @@ class Matches extends StatelessWidget {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: 12.0, top: 12, bottom: 16),
-            child: LeftTextComponent("Matches", 24, _colors.appBeige),
+            child: FormTextComponent(
+                "Matches", 24, _colors.appBeige, true, FontWeight.w600),
           ),
           SizedBox(
               height: _height / 3,
@@ -56,7 +58,8 @@ class Matches extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 12.0, bottom: 16.0),
-            child: LeftTextComponent("Messages", 24, _colors.appBeige),
+            child: FormTextComponent(
+                "Messages", 24, _colors.appBeige, true, FontWeight.w600),
           ),
           Expanded(
               child: ListView.builder(

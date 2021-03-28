@@ -17,54 +17,50 @@ class ImageContainer extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(
           color: Colors.transparent,
-          border: Border.all(
-
-          ),
+          border: Border.all(),
           borderRadius: BorderRadius.circular(18),
         ),
         child: Stack(
           children: [
             Container(
               height: height,
-              child: Image.network(
-                "$imageUrl",
-                fit: BoxFit.cover,
-              ),
+              width: width,
+              child: Image.asset('$imageUrl', fit: BoxFit.cover,),
             ),
-            Positioned(
-                top: 250,
-                left: 12,
-                child: Container(
-                  color: Colors.black,
-                  child: Text(
-                    name,
-                    style: GoogleFonts.workSans(
-                      color: Colors.white,
-                      fontSize: 22.0,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                )),
-            Positioned(
-                top: 280,
-                left: 12,
-                right: 12,
-                child: Container(
-                  color: Colors.black,
-                  width: width,
-                  child: Column(
-                    children: [
-                      Text(
-                        bio,
-                        style: GoogleFonts.workSans(
-                          color: Colors.white,
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      )
-                    ],
-                  ),
-                )),
+//            Positioned(
+//                top: 250,
+//                left: 12,
+//                child: Container(
+//                  color: Colors.black,
+//                  child: Text(
+//                    name,
+//                    style: GoogleFonts.workSans(
+//                      color: Colors.white,
+//                      fontSize: 22.0,
+//                      fontWeight: FontWeight.w600,
+//                    ),
+//                  ),
+//                )),
+//            Positioned(
+//                top: 280,
+//                left: 12,
+//                right: 12,
+//                child: Container(
+//                  color: Colors.black,
+//                  width: width,
+//                  child: Column(
+//                    children: [
+//                      Text(
+//                        bio,
+//                        style: GoogleFonts.workSans(
+//                          color: Colors.white,
+//                          fontSize: 16.0,
+//                          fontWeight: FontWeight.w400,
+//                        ),
+//                      )
+//                    ],
+//                  ),
+//                )),
           ],
         ));
   }
